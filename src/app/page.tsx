@@ -1,4 +1,4 @@
-import Image from "next/image";
+// GLobal Imports:
 
 export default function Home() {
   return (
