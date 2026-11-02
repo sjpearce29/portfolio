@@ -1,20 +1,26 @@
-# Portfolio
+<p align="center">
+  <img src="assets/banner.png" alt="Portfolio. One home page. Four things still to build." width="100%">
+</p>
 
-Personal site for projects I want to keep in one place. One home page is built so far.
+Open the app and you get a heading, **My Portfolio**, and four lines. Those lines are the roadmap. There is no routing, no content, and no deployment behind them yet.
 
-## Planned sections
+## The list
 
-- CV / about me
-- Lego wishlist
-- Golf application
-- A small game (snake or a platformer)
+| | Page | What it will be | State |
+| --- | --- | --- | --- |
+| 01 | CV / about me | A short account of who I am and what I've done | Not started |
+| 02 | Lego wishlist | Sets I want, kept separate from a collection | Not started |
+| 03 | Golf application | A small app for the game | Not started |
+| 04 | Game | Snake, or a platformer | Not started |
 
 ## Stack
 
-- Next.js 15
-- React 19
-- TypeScript
-- Tailwind CSS 4
+<p>
+  <img alt="Next.js 15" src="https://img.shields.io/badge/Next.js_15-121418?style=flat-square&logo=nextdotjs&logoColor=e6b325">
+  <img alt="React 19" src="https://img.shields.io/badge/React_19-121418?style=flat-square&logo=react&logoColor=e6b325">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-121418?style=flat-square&logo=typescript&logoColor=e6b325">
+  <img alt="Tailwind CSS 4" src="https://img.shields.io/badge/Tailwind_CSS_4-121418?style=flat-square&logo=tailwindcss&logoColor=e6b325">
+</p>
 
 ## Run it locally
 
@@ -23,8 +29,6 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Then open [http://localhost:3000](http://localhost:3000).
 
-## Status
-
-Not deployed yet. After it has a public URL, add that URL in the repository About box, and add a screenshot here.
+When a page from the list actually exists, this file should show it. A live URL can go in the repository About box once the site is deployed.
