@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="Portfolio. One home page. Four things still to build." width="100%">
 </p>
 
-Open the app and you get one page. A heading, then three lists: the pages still to build, the other repositories, and the languages those use. There is no routing and no deployment yet.
+Open the app and you get one page. A heading, the pages still to build, the other repositories, and a row of language labels. There is no routing and no deployment yet.
 
 ## On this site
 
@@ -24,12 +24,12 @@ Open the app and you get one page. A heading, then three lists: the pages still 
 
 ## Languages
 
-| Language | Where it is |
-| --- | --- |
-| TypeScript | This site. In use. |
-| JavaScript | [llm-learning](https://github.com/sjpearce29/llm-learning). In use. |
-| SQL | [database-sandbox](https://github.com/sjpearce29/database-sandbox). Not started. |
-| Python | [python-sandbox](https://github.com/sjpearce29/python-sandbox). Not started. |
+<p>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-121418?style=flat-square&logo=typescript&logoColor=e6b325">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-121418?style=flat-square&logo=javascript&logoColor=e6b325">
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-121418?style=flat-square&logoColor=e6b325">
+  <img alt="Python" src="https://img.shields.io/badge/Python-121418?style=flat-square&logo=python&logoColor=e6b325">
+</p>
 
 ## Stack
 
