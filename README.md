@@ -2,16 +2,34 @@
   <img src="assets/banner.png" alt="Portfolio. One home page. Four things still to build." width="100%">
 </p>
 
-Open the app and you get a heading, **My Portfolio**, and four lines. Those lines are the roadmap. There is no routing, no content, and no deployment behind them yet.
+Open the app and you get one page. A heading, then three lists: the pages still to build, the other repositories, and the languages those use. There is no routing and no deployment yet.
 
-## The list
+## On this site
 
 | | Page | What it will be | State |
 | --- | --- | --- | --- |
-| 01 | CV / about me | A short account of who I am and what I've done | Not started |
-| 02 | Lego wishlist | Sets I want, kept separate from a collection | Not started |
-| 03 | Golf application | A small app for the game | Not started |
-| 04 | Game | Snake, or a platformer | Not started |
+| 01 | About | A CV, written in my own words | Not started |
+| 02 | Lego wishlist | Sets I want, not a catalogue of everything I own | Not started |
+| 03 | Golf | A small app for the game | Not started |
+| 04 | A small game | Snake, or a platformer | Not started |
+
+## Other work
+
+| | Repository | What it is | State |
+| --- | --- | --- | --- |
+| 01 | [spotify-widget](https://github.com/sjpearce29/spotify-widget) | A Spotify control for while I'm working | A title and a sentence |
+| 02 | [database-sandbox](https://github.com/sjpearce29/database-sandbox) | A place to try SQL before it becomes part of something else | Empty |
+| 03 | [python-sandbox](https://github.com/sjpearce29/python-sandbox) | The same idea, for Python | Empty |
+| 04 | [llm-learning](https://github.com/sjpearce29/llm-learning) | A public log of learning language models | Started |
+
+## Languages
+
+| Language | Where it is |
+| --- | --- |
+| TypeScript | This site. In use. |
+| JavaScript | [llm-learning](https://github.com/sjpearce29/llm-learning). In use. |
+| SQL | [database-sandbox](https://github.com/sjpearce29/database-sandbox). Not started. |
+| Python | [python-sandbox](https://github.com/sjpearce29/python-sandbox). Not started. |
 
 ## Stack
 
