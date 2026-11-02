@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Sam Pearce",
   description:
-    "One page listing the site, the other work, and the languages those use.",
+    "One page listing the site, the other work, and the languages.",
 };
 
 export default function RootLayout({

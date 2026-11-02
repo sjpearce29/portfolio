@@ -5,6 +5,8 @@
   --foreground: #1c1b19;
   --muted: #5e5a54;
   --rule: #e3dfd6;
+  --label: #121418;
+  --label-text: #e6b325;
 }
 
 @theme inline {
@@ -12,6 +14,8 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-rule: var(--rule);
+  --color-label: var(--label);
+  --color-label-text: var(--label-text);
   --font-sans: "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -21,6 +25,7 @@
     --foreground: #f3efe6;
     --muted: #a39e94;
     --rule: #2c3038;
+    --label: #242830;
   }
 }
 

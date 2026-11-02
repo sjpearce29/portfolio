@@ -28,12 +28,7 @@ const work = [
   ],
 ] as const;
 
-const languages = [
-  ["TypeScript", "This site. In use."],
-  ["JavaScript", "llm-learning. In use."],
-  ["SQL", "database-sandbox. Not started."],
-  ["Python", "python-sandbox. Not started."],
-] as const;
+const languages = ["TypeScript", "JavaScript", "SQL", "Python"] as const;
 
 export default function Home() {
   return (
@@ -41,9 +36,8 @@ export default function Home() {
       <p className="text-xs tracking-[0.16em] text-muted">SJPEARCE29</p>
       <h1 className="mt-3 text-4xl font-medium tracking-tight">Sam Pearce</h1>
       <p className="mt-4 leading-relaxed text-muted">
-        One page. It lists the parts of this site, the other work I am
-        starting, and the languages those are in. None of the four pages
-        exist yet.
+        One page. It lists the parts of this site and the other work I am
+        starting. None of the four pages exist yet.
       </p>
 
       <Section title="On this site">
@@ -81,11 +75,13 @@ export default function Home() {
       </Section>
 
       <Section title="Languages">
-        <ul>
-          {languages.map(([name, detail]) => (
-            <li key={name} className="border-b border-rule py-3">
-              <p className="font-medium">{name}</p>
-              <p className="mt-1 text-sm leading-relaxed text-muted">{detail}</p>
+        <ul className="flex flex-wrap gap-2 py-4">
+          {languages.map((name) => (
+            <li
+              key={name}
+              className="border border-label-text bg-label px-2.5 py-1 text-sm tracking-wide text-label-text"
+            >
+              {name}
             </li>
           ))}
         </ul>
