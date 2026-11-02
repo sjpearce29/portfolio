@@ -1,25 +1,112 @@
-// GLobal Imports:
+const pages = [
+  ["01", "About", "A CV, written in my own words."],
+  ["02", "Lego wishlist", "Sets I want, not a catalogue of everything I own."],
+  ["03", "Golf", "A small app for the game."],
+  ["04", "A small game", "Snake, or a platformer."],
+] as const;
+
+const work = [
+  [
+    "spotify-widget",
+    "https://github.com/sjpearce29/spotify-widget",
+    "A Spotify control for while I'm working. A title and a sentence so far.",
+  ],
+  [
+    "database-sandbox",
+    "https://github.com/sjpearce29/database-sandbox",
+    "A place to try SQL before it becomes part of something else. Empty.",
+  ],
+  [
+    "python-sandbox",
+    "https://github.com/sjpearce29/python-sandbox",
+    "The same idea, for Python. Empty.",
+  ],
+  [
+    "llm-learning",
+    "https://github.com/sjpearce29/llm-learning",
+    "A public log of learning language models. The first program sends a prompt and prints the reply.",
+  ],
+] as const;
+
+const languages = [
+  ["TypeScript", "This site. In use."],
+  ["JavaScript", "llm-learning. In use."],
+  ["SQL", "database-sandbox. Not started."],
+  ["Python", "python-sandbox. Not started."],
+] as const;
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl leading-tight">My Portfolio</h1>
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li>
-            CV/About me
-          </li>
-          <li>
-            Lego wishlist
-          </li>
-          <li>
-            Golf application
-          </li>
-          <li>
-            Game(snake or platformer)
-          </li>
+    <main className="mx-auto min-h-screen max-w-xl px-6 py-16">
+      <p className="text-xs tracking-[0.16em] text-muted">SJPEARCE29</p>
+      <h1 className="mt-3 text-4xl font-medium tracking-tight">Sam Pearce</h1>
+      <p className="mt-4 leading-relaxed text-muted">
+        One page. It lists the parts of this site, the other work I am
+        starting, and the languages those are in. None of the four pages
+        exist yet.
+      </p>
+
+      <Section title="On this site">
+        <ol>
+          {pages.map(([index, name, detail]) => (
+            <li key={name} className="border-b border-rule py-3">
+              <p>
+                <span className="mr-3 text-sm tabular-nums text-muted">
+                  {index}
+                </span>
+                <span className="font-medium">{name}</span>
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-muted">{detail}</p>
+            </li>
+          ))}
         </ol>
-      </main>
-    </div>
+      </Section>
+
+      <Section title="Other work">
+        <ul>
+          {work.map(([name, href, detail]) => (
+            <li key={name} className="border-b border-rule py-3">
+              <p>
+                <a
+                  href={href}
+                  className="font-medium underline decoration-rule underline-offset-4 hover:decoration-foreground"
+                >
+                  {name}
+                </a>
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-muted">{detail}</p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section title="Languages">
+        <ul>
+          {languages.map(([name, detail]) => (
+            <li key={name} className="border-b border-rule py-3">
+              <p className="font-medium">{name}</p>
+              <p className="mt-1 text-sm leading-relaxed text-muted">{detail}</p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    </main>
+  );
+}
+
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="mt-12">
+      <h2 className="text-xs font-medium tracking-[0.16em] text-muted uppercase">
+        {title}
+      </h2>
+      <div className="mt-4 border-t border-rule">{children}</div>
+    </section>
   );
 }
